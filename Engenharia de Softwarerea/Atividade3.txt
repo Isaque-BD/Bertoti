@@ -1,0 +1,24 @@
+Layered Architecture Style
+
+Esse tipo de estrutura pode ser utilizado para um site de home banking, pois é fácil de fazer manutenções e muito fácil de aplicar as coisas, olhando para o trade off é um software com baixo custo e muito simplicidade.
+
+Pipeline Architecture Style
+
+Esse tipo de estrutura pode ser utilizado para um software de coleta de dados de usuários, pois esse tipo de estrutura é capaz de fazer isso, podendo fazer em tempo real. Seu trade off é muito simples de programar e tem um custo muito baixo para manter, sendo uma ótima opção.
+
+Microkernel Architecture Style
+
+Um bom exemplo de software para implementar esse tipo de arqutitetura é uma IDE, como por exemplo, o Eclipse, pois esse tipo de arquitetura você pode adicionar várias features facilmente, sendo muito bom para esse modelo. Analisando seu trade off, é possível ver que sua implementação, custo baixo e simplicidade é muito bom para uma IDE.
+
+Service-Based Architecture Style
+
+Um exemplo de software que pode ser utilizado para esse tipo de estrutura é gerenciamento de dados de uma empresa, pois esse tipo de arquitetura tem várias partições, podendo o usuário escolher várias ferramentas que deseja, vendo seu trade off é possível ver que sua modularidade é de alto nível, perfeito para esse trabalho.
+
+Event-Driven Architecture Style
+
+Um software de banco é uma boa implementação para esse tipo de arquitetura, devido a sua alta escalabilidade e oferecendo várias ferramentas para seus usuários.
+Analisando seu trade off é notado que sua escalabilidade, fault tolerance, evolucionário, modularidade e confiabilidade são muitos bons para esse tipo de software.
+
+Microservices Architecture
+
+Serviço de Streaming é uma implementação boa para esse tipo de arquitetura, pois facilita sua escalabilidade e ajuda no desenvolvimento de um aplicativo, vendo seu trade off, sua escalabilidade, evolucionaridade, implementação e sua confiabilidade são ótimos aspectos para esse tipo de serviço.
