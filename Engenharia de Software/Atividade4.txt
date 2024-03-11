@@ -1,0 +1,13 @@
+Arquitetura De Camadas
+
+Escolhendo um sistema de e-commerce, onde é utilizado o sistema de camada, pois é dividia em sistema em camadas responsabilidades específicas, com cada uma responsável por um conjunto de funcionalidade, que é ótimo para esse tipo de software, seu trade off, como vantagens:
+- Separação clara de responsabilidades.
+- Facilidade de manutenção
+- Simplicidade no código
+- E baixo custo para manter
+- E uma boa escalabilidade (pois é importante ter vários acessos de pessoas simultâneamente)
+Desvantagens 
+- Dificuldade em implementação 
+- Sua evolução não é muito boa para adicionar novas features 
+- Sua performance é baixa
+Porém é algo que eu proponho a perder.
