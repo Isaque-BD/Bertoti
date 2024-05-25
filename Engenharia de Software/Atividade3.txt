@@ -1,23 +1,58 @@
-Layered Architecture Style
 
-Esse tipo de estrutura pode ser utilizado para um site de home banking, pois é fácil de fazer manutenções e muito fácil de aplicar as coisas, escolhendo dois requisitos não funcionais, seria o custo baixo sendo muito bom para esse tipo de arquitetura e escalabilidade sendo um requisito fraco.
+Arquitetura em Camadas (Layered Architecture Style):
+Vantagens para Home Banking:
+Manutenção Facilitada: A estrutura modular em camadas isola as modificações, simplificando o processo de manutenção e reduzindo o risco de erros em outras partes do sistema.
+Fácil Implementação: A natureza bem definida das camadas facilita a compreensão e o desenvolvimento do sistema, acelerando o processo de implementação.
+Baixo Custo: A simplicidade da arquitetura em camadas geralmente leva a custos de desenvolvimento e manutenção mais baixos.
+Desvantagens para Home Banking:
+Escalabilidade Limitada: A rigidez da estrutura em camadas pode dificultar a escalabilidade horizontal do sistema, especialmente em situações de alto tráfego ou crescimento exponencial de dados.
+Exemplos:
+Sistemas bancários tradicionais
+Aplicações de e-commerce
 
-Pipeline Architecture Style
+Arquitetura de Pipeline (Pipeline Architecture Style):
+]Vantagens para Coleta de Dados em Tempo Real:
+Processamento Sequencial Eficiente: A estrutura em pipeline permite o processamento eficiente de dados em tempo real, dividindo o trabalho em etapas menores e otimizadas.
+Alta Simplicidade: A natureza linear da arquitetura de pipeline facilita a implementação e o entendimento do sistema.
+Desvantagens para Coleta de Dados em Tempo Real:
+Tolerância a Falhas Limitada: A falha de um único componente no pipeline pode interromper todo o processo de coleta de dados, impactando a confiabilidade do sistema.
+Exemplos:
+Sistemas de análise de log
+Ferramentas de streaming de dados
 
-Esse tipo de estrutura pode ser utilizado para um software de coleta de dados de usuários, pois esse tipo de estrutura é capaz de fazer isso, podendo fazer em tempo real. Um requisito não funcional para esse tipo de arquitetura que é ótimo é a sua grande simplicidade de programação, e um fraco seria fault tolerance.
+Arquitetura de Microkernel (Microkernel Architecture Style):
+Vantagens para IDEs como Eclipse:
+Extensibilidade Facilitada: A arquitetura de microkernel permite a adição fácil de novos recursos e plugins, ideal para IDEs que exigem constante evolução e personalização.
+Alta Evolutividade: A separação entre o núcleo e os módulos facilita a adaptação e atualização do sistema sem afetar os componentes principais.
+Desvantagens para IDEs como Eclipse:
+Elasticidade Limitada: A comunicação entre o microkernel e os módulos pode gerar gargalos de desempenho, especialmente em cenários com alto volume de dados ou tarefas complexas.
+Exemplos:
+Sistemas operacionais
+Ambientes de desenvolvimento integrados (IDEs)
 
-Microkernel Architecture Style
+Arquitetura Orientada a Serviços (Service-Based Architecture Style):
+Vantagens para Gerenciamento de Dados Corporativos:
+Flexibilidade e Modularidade: A arquitetura orientada a serviços permite a composição de diferentes serviços para atender às necessidades específicas de cada usuário ou departamento, promovendo flexibilidade e personalização.
+Reutilização de Serviços: A padronização e granularidade dos serviços facilitam a reutilização em diferentes contextos, otimizando o desenvolvimento e a manutenção.
+Desvantagens para Gerenciamento de Dados Corporativos:
+Escalabilidade Limitada: A comunicação entre os serviços pode gerar overhead e impactar a escalabilidade horizontal do sistema, especialmente em situações de alto volume de dados ou solicitações simultâneas.
+Exemplos:
+Suites de e-commerce
+Aplicações de enterprise resource planning (ERP)
 
-Um bom exemplo de software para implementar esse tipo de arqutitetura é uma IDE, como por exemplo, o Eclipse, pois esse tipo de arquitetura você pode adicionar várias features facilmente, sendo muito bom para esse modelo. Sua evolucionaridade é muito boa para esse tipo de software, porém sua elasticidade é ruim.
+Arquitetura Orientada a Eventos (Event-Driven Architecture Style):
+Vantagens para Banco Online:
+Alta Escalabilidade: A natureza assíncrona da comunicação por eventos permite lidar com grandes volumes de transações e usuários de forma eficiente e escalável.
+Alta Disponibilidade: A arquitetura resiliente a falhas garante a continuidade do serviço mesmo em caso de indisponibilidade de alguns componentes.
+Desvantagens para Banco Online:
+Testabilidade Dificultada: A natureza assíncrona e distribuída dos eventos pode dificultar a simulação e o teste de cenários específicos do sistema, impactando a qualidade do software.
+Exemplos:
+Sistemas de negociação financeira
+Plataformas de mídias sociais
 
-Service-Based Architecture Style
-
-Um exemplo de software que pode ser utilizado para esse tipo de estrutura é gerenciamento de dados de uma empresa, pois esse tipo de arquitetura tem várias partições, podendo o usuário escolher várias ferramentas que deseja, essa arquitetura tem um ótima facilitação para implementação de recursos, porém sua elasticidade é ruim.
-
-Event-Driven Architecture Style
-
-Um software de banco é uma boa implementação para esse tipo de arquitetura, devido a sua alta escalabilidade e oferecendo várias ferramentas para seus usuários.Seu trade off ganha bastante para escalabilidade que é muito útil para esse tipo de software, porém ele perde na testabilidade.
-
-Microservices Architecture
-
-Serviço de Streaming é uma implementação boa para esse tipo de arquitetura, pois facilita sua escalabilidade e ajuda no desenvolvimento de um aplicativo, para esse tipo de software é muito importante a escalabilidade, por isso essa arquitetura ganha nesse requisito, porém perde na questão de custo, que é muito alto.
+Arquitetura de Microsserviços (Microservices Architecture):
+Vantagens para Serviços de Streaming:
+Escalabilidade Horizontal Eficaz: A independência dos microsserviços permite o dimensionamento individual de cada serviço de acordo com a demanda, otimizando o uso de recursos e a escalabilidade horizontal.
+Desenvolvimento Ágil e Flexível: A natureza modular dos microsserviços facilita o desenvolvimento e a implantação de novas funcionalidades de forma incremental e independente.
+Desvantagens para Serviços de Streaming:
+Alto Custo de Implementação e Manutenção: A complexidade da arquitetura de microsserviços pode aumentar os custos
