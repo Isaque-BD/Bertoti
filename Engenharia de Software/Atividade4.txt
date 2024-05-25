@@ -1,13 +1,33 @@
-Arquitetura De Camadas
+Debate Detalhado de Trade-offs entre Requisitos Não Funcionais em E-commerce
+Camadas do Front-End:
+trade offs:
+    Vantagens:
+        Facilidade de Desenvolvimento: Permite um desenvolvimento rápido e ágil de interfaces de usuário, atendendo às demandas do negócio de forma eficiente.
+        Flexibilidade: Possibilita a personalização das interfaces de acordo com as necessidades específicas de diferentes públicos-alvo, como clientes, administradores ou parceiros.
+        Capacidade de Atendimento às Necessidades dos Usuários: Garante que as interfaces sejam intuitivas, fáceis de usar e atendam às expectativas dos usuários, proporcionando uma boa experiência de compra.
+    Desvantagens:
+        Impacto no Desempenho: A complexidade da interface pode afetar o tempo de carregamento das páginas, impactando negativamente a experiência do usuário.
+        Dificuldade de Manutenção: Mudanças frequentes na interface podem dificultar a manutenção do código, aumentando o risco de erros e instabilidades.
+        Segurança: Vulnerabilidades na interface podem ser exploradas por hackers para comprometer dados de usuários ou do sistema.
 
-Escolhendo um sistema de e-commerce, onde é utilizado o sistema de camada, pois é dividia em sistema em camadas responsabilidades específicas, com cada uma responsável por um conjunto de funcionalidade, que é ótimo para esse tipo de software, seu trade off, como vantagens:
-- Separação clara de responsabilidades.
-- Facilidade de manutenção
-- Simplicidade no código
-- E baixo custo para manter
-- E uma boa escalabilidade (pois é importante ter vários acessos de pessoas simultâneamente)
-Desvantagens 
-- Dificuldade em implementação 
-- Sua evolução não é muito boa para adicionar novas features 
-- Sua performance é baixa
-Porém é algo que eu proponho a perder.
+Camada de Negócios:
+Trade-offs:
+    Vantagens:
+        Modularidade: Permite a organização das regras de negócio em módulos independentes, facilitando o desenvolvimento, a manutenção e a reutilização de código.
+        Regras de Negócio Eficientes: Garante a implementação precisa e eficiente das regras de negócio do e-commerce, como cálculo de descontos, gerenciamento de estoque e processamento de pagamentos.
+        Segurança: Protege as regras de negócio contra acessos não autorizados e manipulações, preservando a integridade dos dados e a confiabilidade do sistema.
+    Desvantagens:
+        Complexidade de Implementação: A implementação das regras de negócio pode ser complexa, exigindo um bom conhecimento do negócio e das tecnologias utilizadas.
+        Dificuldade de Evolução: Modificações nas regras de negócio podem afetar diversos módulos da camada, dificultando a evolução do sistema.
+        Impacto no Desempenho: Regras de negócio complexas podem afetar o desempenho do sistema, especialmente em situações com alto volume de transações.
+
+Camada de Persistência:
+Trade-offs:
+    Vantagens:
+        Armazenamento Seguro: Garante o armazenamento seguro e confiável dos dados do e-commerce, como informações de clientes, produtos e pedidos.
+        Escalabilidade: Permite o dimensionamento da camada para atender à demanda crescente de dados, garantindo a disponibilidade e o desempenho do sistema.
+        Recuperação de Desastres: Possibilita a recuperação rápida dos dados em caso de falhas ou desastres, minimizando o impacto no negócio.
+    Desvantagens:
+        Complexidade de Implementação: A implementação da camada de persistência pode ser complexa, exigindo conhecimento de bancos de dados, tecnologias de armazenamento e otimização de desempenho.
+        Dificuldade de Manutenção: A manutenção da camada de persistência pode ser desafiadora, especialmente em sistemas com grandes volumes de dados.
+        Impacto no Desempenho: Operações de acesso e atualização de dados podem afetar o desempenho do sistema, especialmente em situações com alto volume de transações.
