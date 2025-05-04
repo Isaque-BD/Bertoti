@@ -46,7 +46,7 @@ A GSW Soluções Integradas nos propôs o desafio de desenvolver uma página web
 
 5 - *Discord*: Ferramenta foi utilizada para entrarmos em contato um com outro para discutir assuntos do projeto e ajudar uns aos outros no decorrer do desenvolvimento.
 
-6 - *VSCode*: Ferramenta para o desenvolvimento do projeto
+6 - *VSCode*: Ferramenta para o desenvolvimento do projeto.
 
 7 - *Maven*: Ferramenta essencial para o projeto, pois, com ela é possível deixar uma lista de bibliotecas necessárias para rodar o projeto, quando um outro usuário utilizar ele já vai importar tudo automaticamente.
 
