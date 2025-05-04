@@ -36,12 +36,17 @@ A GSW Soluções Integradas nos propôs o desafio de desenvolver uma página web
 [GIT do Projeto Concluído - GSW Soluções Integradas](https://github.com/Morpheus-Fatec/morpheus/tree/main)
 
 ### Tecnologias Utilizadas
-1 - Java: Foi essencial para todo desenvolvimento pois, foi com ele que foi feito toda a lógica do projeto.
-2 - MySQl: Atuou com todo o armazenamento dos dados, a lógica do sistema e também o cruzamento dos dados para realizar as análises.
-3 - Vue: Teve como atuação toda parte de interface para que o usuário consiga interagir com sistema de forma assertiva e prática.
-4 - GitHub: Fez todo o gerenciamento de versionamento do projeto, ou seja a cada modificação nós tinhamos o controle de quem fez e o que foi alterado.
-5 - Discord: Ferramenta foi utilizada para entrarmos em contato um com outro para discutir assuntos do projeto e ajudar uns aos outros no decorrer do desenvolvimento.
-6 -
+1 - *Java*: Foi essencial para todo desenvolvimento pois, foi com ele que foi feito toda a lógica do projeto.
+
+2 - *MySQl*: Atuou com todo o armazenamento dos dados, a lógica do sistema e também o cruzamento dos dados para realizar as análises.
+
+3 - *Vue*: Teve como atuação toda parte de interface para que o usuário consiga interagir com sistema de forma assertiva e prática.
+
+4 - *GitHub*: Fez todo o gerenciamento de versionamento do projeto, ou seja a cada modificação nós tinhamos o controle de quem fez e o que foi alterado.
+
+5 - *Discord*: Ferramenta foi utilizada para entrarmos em contato um com outro para discutir assuntos do projeto e ajudar uns aos outros no decorrer do desenvolvimento.
+
+6 - *VSCode*: Ferramenta para o desenvolvimento do projeto
 
 
 
