@@ -31,5 +31,7 @@ Começando pela minha formação, atualmente estou cursando Banco de Dados, na q
 ## Meus Projetos
 
 ## Em 2024-2
-A empresa GSW Soluções Integradas
+A GSW Soluções Integradas nos propôs o desafio de desenvolver uma página web voltada para análises estratégicas, com foco no armazenamento de históricos de informações. O sistema utilizará dados provenientes de outros sites, como, por exemplo, portais de notícias, para realizar previsões conforme a necessidade do usuário. Um exemplo seria a análise do crescimento de criptomoedas com base nas notícias relacionadas ou a previsão do tempo, entre outras possibilidades.
+
+
 
