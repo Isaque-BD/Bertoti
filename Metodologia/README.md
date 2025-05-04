@@ -48,7 +48,7 @@ A GSW Soluções Integradas nos propôs o desafio de desenvolver uma página web
 
 6 - *VSCode*: Ferramenta para o desenvolvimento do projeto
 
-7 - *Maven*: Ferramenta essencial para o projeto, pois, com ela é possível deixar uma lista de bibliotecas necessárias para rodar o projeto, quando um outro usuário utilizar ele já vai baixar tudo automaticamente.
+7 - *Maven*: Ferramenta essencial para o projeto, pois, com ela é possível deixar uma lista de bibliotecas necessárias para rodar o projeto, quando um outro usuário utilizar ele já vai importar tudo automaticamente.
 
 ### Contribuições Pessoais
 
