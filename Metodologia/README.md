@@ -52,8 +52,8 @@ A GSW Soluções Integradas nos propôs o desafio de desenvolver uma página web
 
 ### Contribuições Pessoais
 
-Minhas contribuições para o projeto foi bastante atrelado ao retorno das informações, para o usuário, quanto na persistência de dados, tudo isso utilizando as tecnologias Spring boot, Java junto com a biblioteca do Hibernate, que permite fazer o controle dos dados no banco SQL com comandos em Java. Sendo mais detalhitas nas tasks que eu realizei consiste em fazer filtros, paginação (é uma prática muito utilizada para não sobrecarregar a página, deixando limitado os dados por blocos, pois, imagina um banco com 1000 dados retornando tudo de uma só vez para o FrontEnd, não é nada prático) e tratamento do retorno dos dados, ou seja, retornando os dados apenas o que é necessário para o usuário final.
-Aqui tem um exemplo de um código que demonstra um exemplo de como é feito um filtro junto com a paginação por "trás das câmaras":
+Minhas contribuições para o projeto foi bastante atrelado ao retorno das informações, para o usuário, quanto na persistência de dados, tudo isso utilizando as tecnologias Spring boot, Java junto com a biblioteca do Hibernate, que permite fazer o controle dos dados no banco SQL com comandos em Java. Sendo mais detalhista nas tasks que eu realizei consistiu em fazer filtros, paginação (é uma prática muito utilizada para não sobrecarregar a página, deixando limitado os dados por blocos, pois, imagina um banco com 1000 dados retornando tudo de uma só vez para o FrontEnd, não é nada prático) e tratamento do retorno dos dados, ou seja, retornando os dados apenas o que é necessário para o usuário final.
+No código logo abaixo tem um exemplo que demonstra de como é feito um filtro junto com a paginação por "trás das câmaras":
 ```
     public PaginatedApi<ApiEndpointDTO> getFilteredEndpoints(ApiFilterRequestDTO filterRequest, Pageable pageable) {
 
