@@ -8,3 +8,9 @@ Começando pela minha formação, atualmente estou cursando Banco de Dados, na q
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="20" style="vertical-align: middle;"/>
   Linkedin
 </a>
+<a href="https://github.com/Isaque-BD" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="20" style="vertical-align: middle;"/>
+  GitHub
+</a>
+
+## Principais Conhecimentos
