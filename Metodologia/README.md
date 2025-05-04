@@ -48,5 +48,49 @@ A GSW Soluções Integradas nos propôs o desafio de desenvolver uma página web
 
 6 - *VSCode*: Ferramenta para o desenvolvimento do projeto
 
+7 - *Maven*: Ferramenta essencial para o projeto, pois, com ela é possível deixar uma lista de bibliotecas necessárias para rodar o projeto, quando um outro usuário utilizar ele já vai baixar tudo automaticamente.
+
+### Contribuições Pessoais
+
+Minhas contribuições para o projeto foi bastante atrelado ao retorno das informações, para o usuário, quanto na persistência de dados, tudo isso utilizando as tecnologias Spring boot, Java junto com a biblioteca do Hibernate, que permite fazer o controle dos dados no banco SQL com comandos em Java. Sendo mais detalhitas nas tasks que eu realizei consiste em fazer filtros, paginação (é uma prática muito utilizada para não sobrecarregar a página, deixando limitado os dados por blocos, imagina um banco com 1000 dados retornando tudo de uma só vez para o FrontEnd, não é nada prático) e tratamento do retorno dos dados, ou seja, retornando os dados apenas o que é necessário para o usuário final.
+Aqui tem um exemplo de um código que demonstra um exemplo de como é feito um filtro junto com a paginação por "trás das câmaras":
+```
+    public PaginatedApi<ApiEndpointDTO> getFilteredEndpoints(ApiFilterRequestDTO filterRequest, Pageable pageable) {
+
+        List<Api> apis = apiRepository.findAll();
+
+        List<ApiEndpointDTO> result = new ArrayList<>();
+
+        for (Api api : apis) {
+            if (filterRequest.getCode() == null || filterRequest.getCode().contains(api.getCode())) {
+                ApiContent data = apiContentRepository.findFirstByApiId(api);
+
+                if (data != null) {
+                    ApiEndpointDTO dto = new ApiEndpointDTO();
+                    dto.setCode(api.getCode());
+                    dto.setAddress(api.getAddress());
+                    dto.setSource(data.getApiContent());
+                    dto.setMethod(api.getPost(), api.getGet());
+                    result.add(dto);
+                }
+            }
+        }
+
+        int totalElements = result.size();
+        int totalPages = (int) Math.ceil((double) totalElements / pageable.getPageSize());
+        int start = Math.min((int) pageable.getOffset(), totalElements);
+        int end = Math.min(start + pageable.getPageSize(), totalElements);
+        List<ApiEndpointDTO> currentPageContent = result.subList(start, end);
+
+        return new PaginatedApi<>(currentPageContent, pageable.getPageSize(), totalPages);
+    }
+
+```
+
+
+
+
+
+
 
 
