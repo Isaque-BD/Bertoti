@@ -74,7 +74,7 @@ Esse método busca todos os autores de notícias do banco.
 
 - .stream() transforma essa lista em um stream para operar de forma funcional.
 
-- .map(...) converte cada entidade em um DTO (Data Transfer Object) chamado NewsAuthorDTO. Tem como objetivo não retornar todas as informações, pois, não são necessárias mostrar todas informações.
+- .map(...) converte cada entidade em um DTO (Data Transfer Object) chamado NewsAuthorDTO. Tem como objetivo não retornar todas as informações, pois, não são necessárias mostrar todas elas.
 
 - .collect(Collectors.toList()) junta os resultados mapeados numa nova lista.
   
