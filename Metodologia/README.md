@@ -52,8 +52,36 @@ A GSW Soluções Integradas nos propôs o desafio de desenvolver uma página web
 
 ### Contribuições Pessoais
 
-Minhas contribuições para o projeto foi bastante atrelado ao retorno das informações, para o usuário, quanto na persistência de dados, tudo isso utilizando as tecnologias Spring boot, Java junto com a biblioteca do Hibernate, que permite fazer o controle dos dados no banco SQL com comandos em Java. Sendo mais detalhista nas tasks que eu realizei consistiu em fazer filtros, paginação (é uma prática muito utilizada para não sobrecarregar a página, deixando limitado os dados por blocos, pois, imagina um banco com 1000 dados retornando tudo de uma só vez para o FrontEnd, não é nada prático) e tratamento do retorno dos dados, ou seja, retornando os dados apenas o que é necessário para o usuário final.
+<details>
+  <summary>Método de filtro de autores</summary>
 
+
+      @Service
+      public class NewsAuthorService {
+        @Autowired
+        private NewsAuthorRepository newsAuthorRepository;
+    
+        public List<NewsAuthorDTO> getAllAuthors() {
+            return newsAuthorRepository.findAll().stream()
+                .map(author -> new NewsAuthorDTO(author.getAutId(), author.getAutName()))
+                .collect(Collectors.toList());
+        }
+      }
+
+Esse método busca todos os autores de notícias do banco.
+
+- findAll() retorna uma lista de entidades NewsAuthor (por exemplo).
+
+- .stream() transforma essa lista em um stream para operar de forma funcional.
+
+- .map(...) converte cada entidade em um DTO (Data Transfer Object) chamado NewsAuthorDTO. Tem como objetivo não retornar todas as informações, pois, não são necessárias mostrar todas informações.
+
+- .collect(Collectors.toList()) junta os resultados mapeados numa nova lista.
+  
+</details> 
+
+
+Minhas contribuições para o projeto foi bastante atrelado ao retorno das informações, para o usuário, quanto na persistência de dados, tudo isso utilizando as tecnologias Spring boot, Java junto com a biblioteca do Hibernate, que permite fazer o controle dos dados no banco SQL com comandos em Java. Sendo mais detalhista nas tasks que eu realizei consistiu em fazer filtros, paginação (é uma prática muito utilizada para não sobrecarregar a página, deixando limitado os dados por blocos, pois, imagina um banco com 1000 dados retornando tudo de uma só vez para o FrontEnd, não é nada prático) e tratamento do retorno dos dados, ou seja, retornando os dados apenas o que é necessário para o usuário final.
 No código logo abaixo tem um exemplo que demonstra de como é feito um filtro junto com a paginação por "trás das câmaras":
 ```
     public PaginatedApi<ApiEndpointDTO> getFilteredEndpoints(ApiFilterRequestDTO filterRequest, Pageable pageable) {
