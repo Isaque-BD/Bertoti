@@ -133,17 +133,30 @@ Esse método busca todos os autores de notícias do banco.
 
 
   </details>
-Minhas contribuições para o projeto foi bastante atrelado ao retorno das informações, para o usuário, quanto na persistência de dados, tudo isso utilizando as tecnologias Spring boot, Java junto com a biblioteca do Hibernate, que permite fazer o controle dos dados no banco SQL com comandos em Java. Sendo mais detalhista nas tasks que eu realizei consistiu em fazer filtros, paginação (é uma prática muito utilizada para não sobrecarregar a página, deixando limitado os dados por blocos, pois, imagina um banco com 1000 dados retornando tudo de uma só vez para o FrontEnd, não é nada prático) e tratamento do retorno dos dados, ou seja, retornando os dados apenas o que é necessário para o usuário final.
-No código logo abaixo tem um exemplo que demonstra de como é feito um filtro junto com a paginação por "trás das câmaras":
 
 
 ## Hard Skills
+<details>
+  <summary>Programação em Java</summary>
+  Autonomia em desevolvimento com a linguagem java, utilizando meus conhecimentos e fazendo pesquisas para desenvolver.
+</details>
 
-Durante esse semestre eu desenvolvi bastante minha autonomia em programação com o Java, conseguindo fazer a maior parte das minhas tasks apenas com meu conhecimento e pesquisas.
+<details>
+  <summary>Base de dados</summary>
+  Conhecimento na interpretação e entendimento de relacionamento de banco de dados, que é muito importante para desenvolvimento da lógica e da estrutura do projeto.
+</details>
 
 ## Soft Skill
 
-Nesse projeto aprimorei um pouco minha comunicação, pois eu não sou uma pessoa que se comunica muito bem, mas toda dúvida que eu tive eu fui perguntando até ficar tudo claro para mim, muitas vezes eu ficava com receio de perguntar algo novamente, mas foi algo que eu fui trabalhando aos poucos.
+<details>
+  <summary>Comunicação</summary>
+  Durante a API eu tinha uma certa dificuldade em comunicação que eu fui desenvolvimento ao longo do projeto, muitas vezes eu ficava com receio de perguntar algumas dúvidas que eu tinha, mas eu fui perdendo esse medo.
+</details>
+
+<details>
+  <summary>Paciência</summary>
+  Durante a API inteira eu sempre fui paciente a qualquer tipo de inesperado sem me estressar independente do ocorrido, muito importante sempre manter o controle das coisas, quando se trabalha em equipe.
+</details>
 
 
 
