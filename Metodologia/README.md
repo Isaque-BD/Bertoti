@@ -129,16 +129,12 @@ Esse método busca todos os autores de notícias do banco.
         foreign key (api_cod) REFERENCES Api(api_cod)
     );
   
-    
-
-
   </details>
-
 
 ## Hard Skills
 <details>
   <summary>Programação em Java</summary>
-  Autonomia em desevolvimento com a linguagem java, utilizando meus conhecimentos e fazendo pesquisas para desenvolver.
+  Durante o desevolvimento com a linguagem java, utilizando meus conhecimentos, de orientação a abjeto e estrutura de dados e fazendo pesquisas consegui ter bastante autonomia.
 </details>
 
 <details>
