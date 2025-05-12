@@ -99,42 +99,44 @@ Esse método busca todos os autores de notícias do banco.
               }
           }
       }
-  </detais>
+      
+  </details>
 
+  <details>
+  <summary>Modelagem de Banco de Dados</summary>
+  Nessa task tive que desenvolver uma estrutura no banco de dados para suportar o cadastro, atualização e gerenciamento das fontes de dados provenientes de APIs, armazenando as informações capturadas de forma organizada e permitindo a categorização das APIs com tags para facilitar a consulta e aplicação de filtros. Logo abaixo tem o código em SQL da minha parte de banco:
+
+
+      create table Api(
+        api_cod int auto_increment primary key,
+        api_name varchar(30) NOT NULL,
+        api_url varchar(500) unique not null
+    );
+    
+    create table Api_tag(
+        api_cod int,
+        tag_cod int,
+        primary key (api_cod, tag_cod),
+        foreign key (api_cod) REFERENCES Api(api_cod),
+        foreign key (tag_cod) REFERENCES Tag(tag_cod)
+    );
+    
+    create table Data_collected_api(
+        dat_coll_api_cod int auto_increment primary key,
+        api_cod int,
+        dat_coll_api_registry_date timestamp not null DEFAULT CURRENT_TIMESTAMP,
+        dat_coll_api_content LONGTEXT,
+        foreign key (api_cod) REFERENCES Api(api_cod)
+    );
+  
+    
+
+
+  </details>
 Minhas contribuições para o projeto foi bastante atrelado ao retorno das informações, para o usuário, quanto na persistência de dados, tudo isso utilizando as tecnologias Spring boot, Java junto com a biblioteca do Hibernate, que permite fazer o controle dos dados no banco SQL com comandos em Java. Sendo mais detalhista nas tasks que eu realizei consistiu em fazer filtros, paginação (é uma prática muito utilizada para não sobrecarregar a página, deixando limitado os dados por blocos, pois, imagina um banco com 1000 dados retornando tudo de uma só vez para o FrontEnd, não é nada prático) e tratamento do retorno dos dados, ou seja, retornando os dados apenas o que é necessário para o usuário final.
 No código logo abaixo tem um exemplo que demonstra de como é feito um filtro junto com a paginação por "trás das câmaras":
-```
-    public PaginatedApi<ApiEndpointDTO> getFilteredEndpoints(ApiFilterRequestDTO filterRequest, Pageable pageable) {
 
-        List<Api> apis = apiRepository.findAll();
 
-        List<ApiEndpointDTO> result = new ArrayList<>();
-
-        for (Api api : apis) {
-            if (filterRequest.getCode() == null || filterRequest.getCode().contains(api.getCode())) {
-                ApiContent data = apiContentRepository.findFirstByApiId(api);
-
-                if (data != null) {
-                    ApiEndpointDTO dto = new ApiEndpointDTO();
-                    dto.setCode(api.getCode());
-                    dto.setAddress(api.getAddress());
-                    dto.setSource(data.getApiContent());
-                    dto.setMethod(api.getPost(), api.getGet());
-                    result.add(dto);
-                }
-            }
-        }
-
-        int totalElements = result.size();
-        int totalPages = (int) Math.ceil((double) totalElements / pageable.getPageSize());
-        int start = Math.min((int) pageable.getOffset(), totalElements);
-        int end = Math.min(start + pageable.getPageSize(), totalElements);
-        List<ApiEndpointDTO> currentPageContent = result.subList(start, end);
-
-        return new PaginatedApi<>(currentPageContent, pageable.getPageSize(), totalPages);
-    }
-
-```
 ## Hard Skills
 
 Durante esse semestre eu desenvolvi bastante minha autonomia em programação com o Java, conseguindo fazer a maior parte das minhas tasks apenas com meu conhecimento e pesquisas.
