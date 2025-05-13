@@ -99,7 +99,9 @@ Esse método busca todos os autores de notícias do banco.
               }
           }
       }
-      
+
+  Esse código define uma classe ApiEndpointDTO com informações de um endpoint de API (código, endereço, origem e método HTTP).
+  Esse método 'setMethod' só permite que um dos dois parâmetros (post ou get) seja 1 por vez. Ele não lida com outros valores (como ambos 0 ou ambos 1), nem com métodos HTTP além de POST e GET.
   </details>
 
   <details>
