@@ -54,8 +54,8 @@ A GSW Soluções Integradas nos propôs o desafio de desenvolver uma página web
 
 <details>
   <summary>Método de filtro de autores</summary>
-
-
+      Objetivo dessa task era implementar um endpoint que retornava todos os autores cadastrados no sistema. O endpoint listava os autores com informações básicas, como nome e ID para fornecer uma visão geral útil.
+  
       @Service
       public class NewsAuthorService {
         @Autowired
