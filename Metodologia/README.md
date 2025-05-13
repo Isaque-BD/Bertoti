@@ -132,27 +132,17 @@ Esse método busca todos os autores de notícias do banco.
   </details>
 
 ## Hard Skills
-<details>
-  <summary>Programação em Java</summary>
-  Durante o desevolvimento com a linguagem java, utilizando meus conhecimentos, de orientação a abjeto e estrutura de dados e fazendo pesquisas consegui ter bastante autonomia.
-</details>
 
-<details>
-  <summary>Base de dados</summary>
-  Conhecimento na interpretação e entendimento de relacionamento de banco de dados, que é muito importante para desenvolvimento da lógica e da estrutura do projeto.
-</details>
+- Programação em Java: Durante o desevolvimento com a linguagem java, utilizando meus conhecimentos, de orientação a abjeto e estrutura de dados e fazendo pesquisas consegui ter bastante autonomia.
+
+- Base de Dados: Conhecimento na interpretação e entendimento de relacionamento de banco de dados, que é muito importante para desenvolvimento da lógica e da estrutura do projeto.
 
 ## Soft Skill
 
-<details>
-  <summary>Comunicação</summary>
-  Durante a API eu tinha uma certa dificuldade em comunicação que eu fui desenvolvimento ao longo do projeto, muitas vezes eu ficava com receio de perguntar algumas dúvidas que eu tinha, mas eu fui perdendo esse medo.
-</details>
+- Comunicação: Durante a API eu tinha uma certa dificuldade em comunicação que eu fui desenvolvimento ao longo do projeto, muitas vezes eu ficava com receio de perguntar algumas dúvidas que eu tinha, mas eu fui perdendo esse medo.
 
-<details>
-  <summary>Paciência</summary>
-  Durante a API inteira eu sempre fui paciente a qualquer tipo de inesperado sem me estressar independente do ocorrido, muito importante sempre manter o controle das coisas, quando se trabalha em equipe.
-</details>
+- Paciência: Durante a API inteira eu sempre fui paciente a qualquer tipo de inesperado sem me estressar independente do ocorrido, muito importante sempre manter o controle das coisas, quando se trabalha em equipe.
+
 
 
 
