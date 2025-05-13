@@ -108,43 +108,42 @@ Esse método busca todos os autores de notícias do banco.
   <summary>Modelagem de Banco de Dados</summary>
   Nessa task tive que desenvolver uma estrutura no banco de dados para suportar o cadastro, atualização e gerenciamento das fontes de dados provenientes de APIs, armazenando as informações capturadas de forma organizada e permitindo a categorização das APIs com tags para facilitar a consulta e aplicação de filtros. Logo abaixo tem o código em SQL da minha parte de banco:
 
-
-Armazena informações básicas sobre APIs;
-api_cod: identificador único (chave primária, auto incremental);
-api_name: nome da API (obrigatório);
-api_url: URL da API (obrigatório e único);
+- Armazena informações básicas sobre APIs;
+- api_cod: identificador único (chave primária, auto incremental);
+- api_name: nome da API (obrigatório);
+- api_url: URL da API (obrigatório e único);
 
       create table Api(
         api_cod int auto_increment primary key,
         api_name varchar(30) NOT NULL,
         api_url varchar(500) unique not null
-    );
+      );
 
-Relação muitos-para-muitos entre Api e Tag;
-Cada linha representa uma associação entre uma API e uma tag;
-Usa chave primária composta (api_cod, tag_cod);
+- Relação muitos-para-muitos entre Api e Tag;
+- Cada linha representa uma associação entre uma API e uma tag;
+- Usa chave primária composta (api_cod, tag_cod);
 
-    create table Api_tag(
-        api_cod int,
-        tag_cod int,
-        primary key (api_cod, tag_cod),
-        foreign key (api_cod) REFERENCES Api(api_cod),
-        foreign key (tag_cod) REFERENCES Tag(tag_cod)
-    );
+      create table Api_tag(
+          api_cod int,
+          tag_cod int,
+          primary key (api_cod, tag_cod),
+          foreign key (api_cod) REFERENCES Api(api_cod),
+          foreign key (tag_cod) REFERENCES Tag(tag_cod)
+      );
 
-Armazena dados coletados de uma API ao longo do tempo.
-dat_coll_api_cod: identificador único da coleta.
-api_cod: qual API forneceu os dados (chave estrangeira).
-dat_coll_api_registry_date: data/hora da coleta (valor padrão é o momento atual).
-dat_coll_api_content: conteúdo coletado (pode ser grande, tipo JSON).
+- Armazena dados coletados de uma API ao longo do tempo.
+- dat_coll_api_cod: identificador único da coleta.
+- api_cod: qual API forneceu os dados (chave estrangeira).
+- dat_coll_api_registry_date: data/hora da coleta (valor padrão é o momento atual).
+- dat_coll_api_content: conteúdo coletado (pode ser grande, tipo JSON).
 
-    create table Data_collected_api(
-        dat_coll_api_cod int auto_increment primary key,
-        api_cod int,
-        dat_coll_api_registry_date timestamp not null DEFAULT CURRENT_TIMESTAMP,
-        dat_coll_api_content LONGTEXT,
-        foreign key (api_cod) REFERENCES Api(api_cod)
-    );
+      create table Data_collected_api(
+          dat_coll_api_cod int auto_increment primary key,
+          api_cod int,
+          dat_coll_api_registry_date timestamp not null DEFAULT CURRENT_TIMESTAMP,
+          dat_coll_api_content LONGTEXT,
+          foreign key (api_cod) REFERENCES Api(api_cod)
+      );
   
   </details>
 
