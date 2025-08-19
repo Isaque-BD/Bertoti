@@ -30,6 +30,18 @@ Começando pela minha formação, atualmente estou cursando Banco de Dados, na q
 
 ## Meus Projetos
 
+### Em 2024-1
+O desafio proposto para esse semestre, foi desenvolver uma aplicação para realizar análises de climas de regiões, como por exemplo temperatura e umidade, sendo possível fazer uma média de um determinado período para tirar conclusões com base nos dados, beneficiando para tomada de decisões, como por exemplo, escolher o que plantar em uma fazendo para aquela região.
+
+[Git do Projeto Concluído - Aplicação de Análise de climas de regiões](https://github.com/Isaque-BD/API-2-semestre)
+
+### Tecnologias Utilizadas
+
+1 - *Java*: Linguagem de programação escolhida para todo desenvolvimento da aplicação
+2 - *Java FX*:É a ferramenta utilizada para desenvolvimento da interface da aplicação
+3 - *Scene Builder*: Ferramenta que facilitou no desenvolvimento das interfaces
+4 - *
+
 ### Em 2024-2
 A GSW Soluções Integradas nos propôs o desafio de desenvolver uma página web voltada para análises estratégicas, com foco no armazenamento de históricos de informações. O sistema utilizará dados provenientes de outros sites, como, por exemplo, portais de notícias, para realizar previsões conforme a necessidade do usuário. Um exemplo seria a análise do crescimento de criptomoedas com base nas notícias relacionadas ou a previsão do tempo, entre outras possibilidades.
 
